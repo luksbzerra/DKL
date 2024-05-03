@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DKL Cripto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <style>
+      .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      body {
+        background-color: #000043;
+      }
+
+      .col-md-4:nth-child(1) .card:before {
+        background-image: url(img/img3.png);
+        background-repeat: no-repeat;
+        background-size: 400px;
+      }
+
+      .col-md-4:nth-child(2) .card:before {
+        background-image: url(img/img1.png);
+        background-repeat: no-repeat;
+        background-size: 330px;
+      }
+
+      .col-md-4:nth-child(3) .card:before {
+        background-image: url(img/img2.png);
+        background-size: 350px;
+        background-repeat: no-repeat;
+      }
+
+      .card {
+        margin-bottom: 20px;
+        height: 600px;
+        background-color: #dcdad098;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px -5px 20px #4727ce;
+      }
+
+      .banner {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px -5px 20px #4727ce;
+      }
+
+      .bannerGrupo {
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0px -5px 20px #4727ce;
+      }
+
+      .card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+        border-radius: 20px;
+      }
+
+      .card-body {
+        position: relative;
+        z-index: 1;
+        color: #000;
+      }
+
+      .card-title {
+        text-align: center;
+      }
+
+      .card-price {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .list-group-item {
+        background-color: transparent !important;
+      }
+
+      .btn-primary {
+        background-color: #4727ce;
+        border-color: #4727ce;
+      }
+
+      .comunidade {
+        padding-bottom: 50px;
+      }
+
+      .textoComunidade {
+        padding-top: 20px;
+      }
+
+      .textoPq {
+        padding-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid sticky-top">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="" />
+        </a>
+        <h1>DKL Cripto</h1>
+      </div>
+      <nav class="navbar border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#porque"
+                    >Por que DKL?</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#planos">Planos</a>
+                </li>
+              </ul>
+              <div class="icones">
+                <a href="https://www.youtube.com/@DKLCripto">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-youtube"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    />
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-telegram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"
+                    />
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-discord"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <main>
+      <!-- Grupo DKL -->
+      <div class="container mt-5">
+        <div class="row">
+          <!-- Texto do Grupo DKL -->
+          <div class="col-md-6">
+            <h1 class="text-white" style="font-size: 80px">Grupo DKL</h1>
+            <p class="text-white" style="font-size: 40px">
+              Junte-se a um grupo exclusivo de especialistas em criptomoedas e
+              descubra como lucrar no mercado cripto!
+            </p>
+            <a
+              href="#planos"
+              class="btn btn-primary"
+              style="font-size: 150%; margin-bottom: 40px"
+              >Conheça nossos planos</a
+            >
+          </div>
+          <!-- Banner do lado direito -->
+          <div class="col-md-6 col-mt-4 offset-lg-0">
+            <img
+              src="img/banner.jpeg"
+              alt="Banner do Grupo DKL"
+              class="img-fluid bannerGrupo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Porque nós -->
+
+      <div class="container mt-5" id="porque">
+        <div class="row">
+          <div class="col-md-9 offset-md-1">
+            <!-- Conteúdo da seção "Por que Nós?" -->
+            <div>
+              <h1 class="text-white">Por que Nós?</h1>
+              <p class="text-white" style="font-size: large">
+                Somente nós temos os principais pilares para que seja entregue
+                um conteúdo de qualidade de forma incontestável.
+              </p>
+              <br />
+              <div class="textoPq">
+                <h4 class="text-white">1. ​Expertise Inigualável</h4>
+                <p class="text-white">
+                  Nossa equipe é composta por especialistas com vasta
+                  experiência no mercado de criptomoedas. Estamos aqui para
+                  orientá-lo com confiança e conhecimento consolidado.
+                </p>
+                <h4 class="text-white">2. Conteúdo de Alta Qualidade</h4>
+                <p class="text-white">
+                  Ao se juntar ao nosso grupo, você terá acesso a uma ampla gama
+                  de recursos exclusivos, incluindo transmissões ao vivo, uma
+                  carteira de investimentos personalizada e um curso completo
+                  com mais de 5 aulas, tudo elaborado para impulsionar seus
+                  ganhos.
+                </p>
+                <h4 class="text-white">3. Educação de Excelência</h4>
+                <p class="text-white">
+                  Não somos apenas um serviço; somos uma comunidade. Junte-se a
+                  outros investidores apaixonados que compartilham seus
+                  objetivos e esteja imerso em um ambiente de apoio e
+                  colaboração, promovendo aprendizado contínuo.
+                </p>
+                <h4 class="text-white">4. Comunidade Empoderada</h4>
+                <p class="text-white">
+                  Nossa abordagem é centrada em resultados tangíveis. Muitos de
+                  nossos membros já testemunharam significativo crescimento em
+                  seus investimentos desde que se uniram a nós. Junte-se a nós e
+                  faça parte desta história de sucesso em construção.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comunidade -->
+      <div class="container mt-5 comunidade" id="sobre">
+        <div class="row align-items-center">
+          <div class="col-md-6 mt-4">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-0">
+                <img src="img/banner2.jpeg" class="img-fluid banner mb-4" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-white textoComunidade">
+            <h1 class="text-center">Sobre a Comunidade</h1>
+            <br />
+            <div>
+              <h3>Descubra o Poder da Nossa Comunidade</h3>
+              <p style="font-size: 14px">
+                Em um mundo onde o sucesso muitas vezes é visto como uma jornada
+                solitária, nossa comunidade desafia essa narrativa. Aqui,
+                acreditamos no poder da colaboração, na força da união e no
+                valor de se apoiar mutuamente em busca de um objetivo comum:
+                prosperidade financeira através das criptomoedas.
+              </p>
+            </div>
+            <div>
+              <h3>Conexão Além dos Números:</h3>
+              <p style="font-size: 14px">
+                Mais do que simplesmente trocar informações e insights sobre
+                investimentos, nossa comunidade é um espaço onde as conexões vão
+                além dos números. É onde você encontrará pessoas apaixonadas,
+                compartilhando suas histórias, desafios e triunfos. É um lugar
+                para se conectar com mentes afins, criar laços e construir
+                amizades duradouras.
+              </p>
+            </div>
+            <div>
+              <h3>Apoio Completo:</h3>
+              <p style="font-size: 14px">
+                Quando você se junta a nós, não está apenas entrando em um grupo
+                de investimento. Você está se tornando parte de uma rede de
+                apoio inabalável. Nossos membros estão sempre prontos para
+                oferecer conselhos, encorajamento e suporte mútuo. Não importa
+                se você é um novato ansioso ou um investidor experiente, todos
+                são bem-vindos e valorizados aqui.
+              </p>
+            </div>
+            <div>
+              <h3>Crescimento Coletivo:</h3>
+              <p style="font-size: 14px">
+                Acreditamos que o verdadeiro sucesso é medido não apenas pelo
+                que alcançamos individualmente, mas pelo crescimento que
+                compartilhamos como comunidade. À medida que cada membro
+                prospera, elevamos o grupo como um todo. É esse espírito de
+                crescimento coletivo que nos impulsiona a alcançar novos
+                patamares juntos.
+              </p>
+            </div>
+            <div>
+              <h3>Seja Parte da História:</h3>
+              <p style="font-size: 14px">
+                Ao se juntar à nossa comunidade, você não está apenas se
+                inscrevendo em um serviço. Você está se tornando parte de uma
+                história em constante evolução. Uma história de conquistas,
+                aprendizado e sucesso compartilhado. Venha fazer parte dessa
+                jornada e ajude a escrever o próximo capítulo da nossa história.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Planos -->
+      <div class="container" id="planos">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Plano Mensal</h2>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Análises diárias do mercado</li>
+                  <li class="list-group-item">Lives semanais</li>
+                  <li class="list-group-item">Bate-papo com especialistas</li>
+                  <li class="list-group-item">Acesso a todos os canais</li>
+                  <li class="list-group-item">Suporte 24/7</li>
+                </ul>
+                <p class="card-price mt-auto mb-0">R$ 19,90/mês</p>
+                <a
+                  href="https://pay.kiwify.com.br/5YsKUR4"
+                  class="btn btn-primary mt-3"
+                  >Assinar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Plano Semestral</h2>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Análises diárias do mercado</li>
+                  <li class="list-group-item">Lives semanais</li>
+                  <li class="list-group-item">Bate-papo com especialistas</li>
+                  <li class="list-group-item">Acesso a todos os canais</li>
+                  <li class="list-group-item">Suporte 24/7</li>
+                  <li class="list-group-item">
+                    Pedidos de análises a especialistas
+                  </li>
+                </ul>
+                <p class="card-price mt-auto mb-0">R$ 79,90/semestre</p>
+                <a
+                  href="https://pay.kiwify.com.br/41ETrZ2"
+                  class="btn btn-primary mt-3"
+                  >Assinar</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <h2 class="card-title">Plano Vitalício</h2>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Análises diárias do mercado</li>
+                  <li class="list-group-item">Lives semanais</li>
+                  <li class="list-group-item">Bate-papo com especialistas</li>
+                  <li class="list-group-item">Acesso a todos os canais</li>
+                  <li class="list-group-item">Suporte 24/7</li>
+                  <li class="list-group-item">
+                    Pedidos de análises a especialistas
+                  </li>
+                  <li class="list-group-item">Mini curso aprendiz</li>
+                </ul>
+                <p class="card-price mt-auto mb-0">R$ 159,90/vitalício</p>
+                <a
+                  href="https://pay.kiwify.com.br/HIEsIbs"
+                  class="btn btn-primary mt-3"
+                  >Assinar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://www.youtube.com/@DKLCripto" target="_blank"
+              >YouTube</a
+            >
+          </div>
+          <div class="col-md-4">
+            <a href="termos_e_condicoes.html">Termos e Condições</a>
+          </div>
+          <div class="col-md-4">
+            <a href="politica_de_privacidade.html">Política de Privacidade</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <br />
+            <p>© 2024 por DKL, Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
